@@ -1,0 +1,1 @@
+Blank version of basic blog, trying out how to use Git

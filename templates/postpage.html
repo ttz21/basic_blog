@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block material %}
+  <h2>Please use the form below to upload a post!</h2>
+
+        <form method="post">
+            <label>
+                <div>Title of Blog Post:</div> <input type="text" name="subject" value={{subject}}>
+            </label>
+            <label>
+                <div>Content:</div> <textarea name="content">{{content}}</textarea>
+            </label>
+            
+            <div class="error"> {{error}}</div>
+
+            <input type="submit">
+
+        </form>
+{% endblock %}
+
+
+	

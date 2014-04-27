@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block material %}
+<h2>Please log in with your details!</h2>
+
+<a href="/blog/signup" class="main-title"><p>Click here to sign up</p></a>
+
+<form method = "post">
+    
+    <br>
+
+    <label>
+        Username
+        <input type="text" name="username" value = {{user}}>
+    </label>
+ 
+
+    <br>
+    
+    <label>
+        Password
+        <input type="password" name = "password" value ="">
+    </label>
+
+    <br>
+
+    
+    <span style = "color: red">{{errormsg}}</span>
+
+    <br><br>
+     
+<input type = "Submit">
+
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block material %}
+
+        <div class="content">
+        <div class="content-subject">{{date.strftime("%d %b, %Y")}}</div>
+        <div class="content-subject">{{subject}}</div>
+        <pre class="content-body">{{content|safe}}</pre>
+        </div>
+        
+<span style = "color: black">{{queried}}</span>
+
+{% endblock %}

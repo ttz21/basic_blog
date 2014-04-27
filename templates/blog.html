@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block material %}
+   
+        {% for content in contents%}
+                <div class="content">
+                <div class="content-subject">{{content.created.strftime("%d %b, %Y")}}</div>
+                <div class="content-subject">{{content.subject}}</div>
+                <pre class="content-body">{{content.content|safe}}</pre>
+            </div>
+            <hr>
+        {% endfor %}
+
+
+<span style = "color: black">{{queried}}</span>
+
+{% endblock %}
+
+
+    

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<style type="text/css">
+    h1 {
+	color: orange
+    }
+
+
+    body {
+        font-family: sans-serif; width: 800px; margin: 0 auto; padding: 10px; color: blue
+    }
+     
+    hr {
+        margin: 20px auto;
+    }
+
+    .content + .content {
+        margin-top: 20px; 
+    }
+    .content-subject {
+        font-weight: bold; font-size: 16px; color: purple
+    }
+    .content-body {
+        margin: 0; font-size: 16px; color: purple
+    }
+	</style>
+
+
+<body>
+        <a href="/blog" class="main-title"><h1>Tina's basic blog!</h1></a>
+	<head>
+
+
+  		<title>Hello World! Welcome to my Blog</title>
+	</head>
+
+ 
+
+  <div id="content">
+  {% block material %}
+  {% endblock %}
+  </div>
+</body>
+
+</html>
